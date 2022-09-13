@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 
 <head>
     <meta charset="utf-8" />
@@ -26,20 +26,20 @@
     </header>
     <main>
         <section id="rechercher">
-            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+            <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
             <p>En plein centre ville ou en pleine nature</p>
-            <form method="post" action="traitement.php">
-                <p>
-                    <i class="fa-solid fa-location-dot fa-lg" id="point"></i><input type="search" name="recherche"
-                        value="Marseille, France" placeholder="Ville, Pay" /><input type="button" value="Rechercher"
-                        id="recherche" /><input type="button" value=" " id="bouton" /><i
-                        class="fa-solid fa-magnifying-glass" id="loupe"></i>
-                </p>
-            </form>
+            <div class="barrederecherche">
+                <i class="fa-solid fa-location-dot fa-lg" id="point"></i>
+                <input type="search" name="recherche" value="Marseille, France" placeholder="Ville, Pay" />
+                <button id="recherche">
+                    <span>Rechercher</span>
+                    <i id="bouton" class="fa-solid fa-magnifying-glass fa-sm"></i>
+                </button>
+            </div>
         </section>
         <section id="f">
             <div id="filtre">
-                <h1>Filtres</h1>
+                <h2>Filtres</h2>
                 <div class="iconef">
                     <div class="filtrebutton">
                         <i class="fa-solid fa-money-bill-wave iconefilter"></i>
@@ -64,75 +64,93 @@
                 <p>Plus de 500 logements sont disponibles dans cette ville</p>
             </aside>
         </section>
-        <section id="milieu">
+        <div id="milieu">
             <div id="hebergement">
                 <section id="hebergements">
-                    <h1>Hébergements à Marseille</h1>
+                    <h2>Hébergements à Marseille</h2>
                     <div id="hcard">
                         <a href="#">
                             <figure>
                                 <img src="images/cannebiere.jpg" alt="Auberge la Cannebiére" />
-                                <figcaption>Auberge La Cannebière</figcaption>
-                                <p>Nuit à partir de <span class="gras">25€</span></p>
-                                <span class="i"><i class="fa-solid fa-star fa-sm" id="b"></i><i
-                                        class="fa-solid fa-star fa-sm" id="b"></i><i class="fa-solid fa-star fa-sm"
-                                        id="b"></i><i class="fa-solid fa-star fa-sm" id="b"></i><i
-                                        class="fa-solid fa-star fa-sm" id="g"></i></span>
+                                <figcaption>Auberge La Cannebière<p>Nuit à partir de <span class="gras">25€</span></p>
+                                    <span class="i">
+                                        <i class="fa-solid fa-star fa-xs b"></i>
+                                        <i class="fa-solid fa-star fa-xs b"></i>
+                                        <i class="fa-solid fa-star fa-xs b"></i>
+                                        <i class="fa-solid fa-star fa-xs b"></i>
+                                        <i class="fa-solid fa-star fa-xs g"></i>
+                                    </span>
+                                </figcaption>
                             </figure>
                         </a>
                         <a href="#">
                             <figure>
                                 <img src="images/port.jpg" alt="Hôtel du port" />
-                                <figcaption>Hôtel du port</figcaption>
-                                <p>Nuit à partir de 52<span class="gras">€</span></p>
-                                <span class="i"><i class="fa-solid fa-star fa-sm" id="b"></i><i
-                                        class="fa-solid fa-star fa-sm" id="b"></i><i class="fa-solid fa-star fa-sm"
-                                        id="b"></i><i class="fa-solid fa-star fa-sm" id="b"></i><i
-                                        class="fa-solid fa-star fa-sm" id="b"></i></span>
+                                <figcaption>Hôtel du port<p>Nuit à partir de 52<span class="gras">€</span></p>
+                                    <span class="i">
+                                        <i class="fa-solid fa-star fa-xs b"></i>
+                                        <i class="fa-solid fa-star fa-xs b"></i>
+                                        <i class="fa-solid fa-star fa-xs b"></i>
+                                        <i class="fa-solid fa-star fa-xs b"></i>
+                                        <i class="fa-solid fa-star fa-xs b"></i>
+                                    </span>
+                                </figcaption>
                             </figure>
                         </a>
                         <a href="#">
                             <figure>
                                 <img src="images/mouettes.jpg" alt="Hôtel Les mouettes" />
-                                <figcaption>Hôtel Les mouettes</figcaption>
-                                <p>Nuit à partir de 76<span class="gras">€</span></p>
-                                <span class="i"><i class="fa-solid fa-star fa-sm" id="b"></i><i
-                                        class="fa-solid fa-star fa-sm" id="b"></i><i class="fa-solid fa-star fa-sm"
-                                        id="b"></i><i class="fa-solid fa-star fa-sm" id="b"></i><i
-                                        class="fa-solid fa-star fa-sm" id="g"></i></span>
+                                <figcaption>Hôtel Les mouettes<p>Nuit à partir de 76<span class="gras">€</span></p>
+                                    <span class="i">
+                                        <i class="fa-solid fa-star fa-xs b"></i>
+                                        <i class="fa-solid fa-star fa-xs b"></i>
+                                        <i class="fa-solid fa-star fa-xs b"></i>
+                                        <i class="fa-solid fa-star fa-xs b"></i>
+                                        <i class="fa-solid fa-star fa-xs g"></i>
+                                    </span>
+                                </figcaption>
                             </figure>
                         </a>
                         <a href="#">
                             <figure>
                                 <img src="images/mer.jpg" alt="Hôtel de la mer" />
-                                <figcaption>Hôtel de la mer</figcaption>
-                                <p>Nuit à partir de 46<span class="gras">€</span></p>
-                                <span class="i"><i class="fa-solid fa-star fa-sm" id="b"></i><i
-                                        class="fa-solid fa-star fa-sm" id="b"></i><i class="fa-solid fa-star fa-sm"
-                                        id="b"></i><i class="fa-solid fa-star fa-sm" id="g"></i><i
-                                        class="fa-solid fa-star fa-sm" id="g"></i></span>
+                                <figcaption>Hôtel de la mer<p>Nuit à partir de 46<span class="gras">€</span></p>
+                                    <span class="i">
+                                        <i class="fa-solid fa-star fa-xs b"></i>
+                                        <i class="fa-solid fa-star fa-xs b"></i>
+                                        <i class="fa-solid fa-star fa-xs b"></i>
+                                        <i class="fa-solid fa-star fa-xs g"></i>
+                                        <i class="fa-solid fa-star fa-xs g"></i>
+                                    </span>
+                                </figcaption>
                             </figure>
                         </a>
                         <a href="#">
                             <figure>
                                 <img src="images/panier.jpg" alt="Auberge Le Panier" />
-                                <figcaption>Auberge Le Panier</figcaption>
-                                <p>Nuit à partir de <span class="gras">23€</span></p>
-                                <span class="i"><i class="fa-solid fa-star fa-sm" id="b"></i><i
-                                        class="fa-solid fa-star fa-sm" id="b"></i><i class="fa-solid fa-star fa-sm"
-                                        id="b"></i><i class="fa-solid fa-star fa-sm" id="b"></i><i
-                                        class="fa-solid fa-star fa-sm" id="g"></i></span>
+                                <figcaption>Auberge Le Panier<p>Nuit à partir de <span class="gras">23€</span></p>
+                                    <span class="i">
+                                        <i class="fa-solid fa-star fa-xs b"></i>
+                                        <i class="fa-solid fa-star fa-xs b"></i>
+                                        <i class="fa-solid fa-star fa-xs b"></i>
+                                        <i class="fa-solid fa-star fa-xs b"></i>
+                                        <i class="fa-solid fa-star fa-xs g"></i>
+                                    </span>
+                                </figcaption>
                             </figure>
                         </a>
                         <a href="#">
                             <figure>
                                 <img src="images/amina.jpg" alt="Hôtel chez Amina" />
-                                <figcaption>Hôtel chez Amina</figcaption>
-                                <p>Nuit à partir de 96<span class="gras">€</span></p>
-                                <span class="i"><i class="fa-solid fa-star fa-sm" id="b"></i><i
-                                        class="fa-solid fa-star fa-sm" id="b"></i><i class="fa-solid fa-star fa-sm"
-                                        id="b"></i><i class="fa-solid fa-star fa-sm" id="b"></i><i
-                                        class="fa-solid fa-star fa-sm" id="b"></i></span>
+                                <figcaption>Hôtel chez Amina<p>Nuit à partir de 96<span class="gras">€</span></p>
+                                    <span class="i">
+                                        <i class="fa-solid fa-star fa-xs b"></i>
+                                        <i class="fa-solid fa-star fa-xs b"></i>
+                                        <i class="fa-solid fa-star fa-xs b"></i>
+                                        <i class="fa-solid fa-star fa-xs b"></i>
+                                        <i class="fa-solid fa-star fa-xs b"></i>
+                                    </span>
+                                </figcaption>
                             </figure>
                         </a>
                     </div>
@@ -140,46 +158,56 @@
                 </section>
                 <aside id="populaire">
                     <div id="titre">
-                        <h1>Les plus populaires</h1>
+                        <h2>Les plus populaires</h2>
                         <i class="fa-solid fa-star fa-lg"></i>
                     </div>
                     <a href="#">
                         <figure>
                             <img src="images/matin.jpg" alt="Hôtel Le soleil du matin" />
-                            <figcaption>Hôtel Le soleil du matin</figcaption>
-                            <p>Nuit à partir de 128<span class="gras">€</span></p>
-                            <span class="i"><i class="fa-solid fa-star fa-xs" id="b"></i><i
-                                    class="fa-solid fa-star fa-xs" id="b"></i><i class="fa-solid fa-star fa-xs"
-                                    id="b"></i><i class="fa-solid fa-star fa-xs" id="b"></i><i
-                                    class="fa-solid fa-star fa-xs" id="b"></i></span>
+                            <figcaption>Hôtel Le soleil du matin<p>Nuit à partir de 128<span class="gras">€</span></p>
+                                <span class="i">
+                                    <i class="fa-solid fa-star fa-xs b"></i>
+                                    <i class="fa-solid fa-star fa-xs b"></i>
+                                    <i class="fa-solid fa-star fa-xs b"></i>
+                                    <i class="fa-solid fa-star fa-xs b"></i>
+                                    <i class="fa-solid fa-star fa-xs b"></i>
+                                </span>
+                            </figcaption>
                         </figure>
                     </a>
                     <a href="#">
                         <figure>
                             <img src="images/hotes.jpg" alt="Au coeur de l'eau Chambres d'hôtes" />
-                            <figcaption>Au coeur de l'eau Chambres d'hôtes</figcaption>
-                            <p>Nuit à partir de 71<span class="gras">€</span></p>
-                            <span class="i"><i class="fa-solid fa-star fa-xs" id="b"></i><i
-                                    class="fa-solid fa-star fa-xs" id="b"></i><i class="fa-solid fa-star fa-xs"
-                                    id="b"></i><i class="fa-solid fa-star fa-xs" id="b"></i><i
-                                    class="fa-solid fa-star fa-xs" id="g"></i></span>
+                            <figcaption>Au coeur de l'eau Chambres d'hôtes<p>Nuit à partir de 71<span
+                                        class="gras">€</span></p>
+                                <span class="i">
+                                    <i class="fa-solid fa-star fa-xs b"></i>
+                                    <i class="fa-solid fa-star fa-xs b"></i>
+                                    <i class="fa-solid fa-star fa-xs b"></i>
+                                    <i class="fa-solid fa-star fa-xs b"></i>
+                                    <i class="fa-solid fa-star fa-xs g"></i>
+                                </span>
+                            </figcaption>
                         </figure>
                     </a>
                     <a href="#">
                         <figure>
                             <img src="images/blanc.jpg" alt="Hôtel Tout bleu et Blanc" />
-                            <figcaption>Hôtel Tout bleu et Blanc</figcaption>
-                            <p>Nuit à partir de 68<span class="gras">€</span></p>
-                            <span class="i"><i class="fa-solid fa-star fa-xs" id="b"></i><i
-                                    class="fa-solid fa-star fa-xs" id="b"></i><i class="fa-solid fa-star fa-xs"
-                                    id="b"></i><i class="fa-solid fa-star fa-xs" id="b"></i><i
-                                    class="fa-solid fa-star fa-xs" id="g"></i></span>
+                            <figcaption>Hôtel Tout bleu et Blanc<p>Nuit à partir de 68<span class="gras">€</span></p>
+                                <span class="i">
+                                    <i class="fa-solid fa-star fa-xs b"></i>
+                                    <i class="fa-solid fa-star fa-xs b"></i>
+                                    <i class="fa-solid fa-star fa-xs b"></i>
+                                    <i class="fa-solid fa-star fa-xs b"></i>
+                                    <i class="fa-solid fa-star fa-xs g"></i>
+                                </span>
+                            </figcaption>
                         </figure>
                     </a>
                 </aside>
             </div>
             <section id="activites">
-                <h1>Activités à Marseille</h1>
+                <h2>Activités à Marseille</h2>
                 <div id="acard">
                     <a href="#" class="ligne">
                         <figure>
@@ -223,25 +251,31 @@
                     </div>
                 </div>
             </section>
-        </section>
+        </div>
     </main>
     <footer>
-        <ul>
+        <div class="pied">
             <h2>A propos</h2>
-            <li><a href="#">Fonctionnement du site</a></li>
-            <li><a href="#">Conditions générales de vente</a></li>
-            <li><a href="#">Données et confidentialité</a></li>
-        </ul>
-        <ul>
+            <ul>
+                <li><a href="#">Fonctionnement du site</a></li>
+                <li><a href="#">Conditions générales de vente</a></li>
+                <li><a href="#">Données et confidentialité</a></li>
+            </ul>
+        </div>
+        <div class="pied">
             <h2>Nos hébergements</h2>
-            <li><a href="#">Charte qualité</a></li>
-            <li><a href="#">Soumettre votre hôtel</a></li>
-        </ul>
-        <ul>
+            <ul>
+                <li><a href="#">Charte qualité</a></li>
+                <li><a href="#">Soumettre votre hôtel</a></li>
+            </ul>
+        </div>
+        <div class="pied">
             <h2>Assistance</h2>
-            <li><a href="#">Centre d'aide</a></li>
-            <li><a href="#">Nous contacter</a></li>
-        </ul>
+            <ul>
+                <li><a href="#">Centre d'aide</a></li>
+                <li><a href="#">Nous contacter</a></li>
+            </ul>
+        </div>
     </footer>
 </body>
 
